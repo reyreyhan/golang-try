@@ -1,4 +1,4 @@
-package controlers
+package controllers
 
 import "github.com/reyreyhan/golang-try/api/middlewares"
 
