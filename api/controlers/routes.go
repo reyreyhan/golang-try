@@ -1,6 +1,6 @@
 package controlers
 
-import "github.com/reyreyhan/golang-try/middlewares"
+import "github.com/reyreyhan/golang-try/api/middlewares"
 
 func (s *Server) initializeRoutes() {
 

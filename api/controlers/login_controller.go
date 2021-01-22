@@ -5,10 +5,10 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/reyreyhan/golang-try/auth"
-	"github.com/reyreyhan/golang-try/formaterror"
-	"github.com/reyreyhan/golang-try/models"
-	"github.com/reyreyhan/golang-try/responses"
+	"github.com/reyreyhan/golang-try/api/auth"
+	"github.com/reyreyhan/golang-try/api/models"
+	"github.com/reyreyhan/golang-try/api/responses"
+	"github.com/reyreyhan/golang-try/api/utils/formaterror"
 	"golang.org/x/crypto/bcrypt"
 )
 
