@@ -14,6 +14,13 @@ var users = []models.User{
 		Password: "password",
 		Address:  "Surabaya",
 	},
+
+	models.User{
+		Username: "Alphard Savero",
+		Email:    "alphard@gmail.com",
+		Password: "password",
+		Address:  "Sidoarjo",
+	},
 }
 
 func Load(db *gorm.DB) {
@@ -26,6 +33,13 @@ func Load(db *gorm.DB) {
 	err = db.Debug().AutoMigrate(&models.User{}).Error
 	if err != nil {
 		log.Fatalf("cannot migrate table: %v", err)
+	}
+
+	for i, _ := range users {
+		err = db.Debug().Model(&models.User{}).Create(&users[i]).Error
+		if err != nil {
+			log.Fatalf("cannot seed users table: %v", err)
+		}
 	}
 
 }
