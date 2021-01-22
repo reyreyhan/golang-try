@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
+	"github.com/reyreyhan/golang-try/api/controllers"
 	"github.com/reyreyhan/golang-try/api/seed"
 )
 
