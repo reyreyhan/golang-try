@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/jinzhu/gorm"
-	"github.com/reyreyhan/golang-try/models"
+	"github.com/reyreyhan/golang-try/api/models"
 )
 
 var users = []models.User{
